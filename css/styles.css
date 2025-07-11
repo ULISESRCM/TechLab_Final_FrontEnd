@@ -1,0 +1,124 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 70px; /* Ajuste para evitar que el contenido se superponga con la navbar */
+}
+
+a,
+.btn,
+.btn-link,
+.btn-primary,
+.btn-danger {
+  color: #555555 !important;
+  background-color: #e0e0e0 !important;
+  border-color: #aaaaaa !important;
+}
+
+a:hover,
+.btn:hover,
+.btn-link:hover,
+.btn-primary:hover,
+.btn-danger:hover {
+  background-color: #d3d3d3 !important;
+  color: #000000 !important;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card img {
+  filter: grayscale(100%);
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+#productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+#reseñas .card {
+  margin-bottom: 20px;
+}
+
+#carrito-items .card {
+  flex-direction: row;
+  align-items: center;
+}
+
+#carrito-items .card img {
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+#contacto {
+  padding: 10px;
+}
+
+/* Media Queries para la sección de contacto */
+@media (max-width: 768px) {
+  #contacto .form-control {
+    margin-bottom: 15px;
+  }
+}
+
+/* Estilo para botón de agregar al carrito */
+.btn-added {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Ajustes para el botón de descripción */
+.btn-link {
+  padding-left: 0;
+  font-size: 14px;
+  color: #007bff;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+footer .text-uppercase {
+  font-weight: 700;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer ul li a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #007bff;
+}
+
+footer .bg-dark {
+  background-color: #343a40 !important;
+  padding: 10px 0;
+}
